@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
-
       appBar: AppBar(
         backgroundColor: Color(0xFF0D1B2A),
         elevation: 0,
@@ -52,7 +50,6 @@ class HomePage extends StatelessWidget {
             SizedBox(height: 20),
             sectionTitle("Categories"),
             SizedBox(height: 10),
-
             Row(
               children: [
                 categoryChip("Flights", Icons.flight, true),
@@ -60,7 +57,6 @@ class HomePage extends StatelessWidget {
                 categoryChip("Beach", Icons.beach_access, false),
               ],
             ),
-
             SizedBox(height: 20),
             sectionTitle("Top Destinations trending this summer"),
             SizedBox(height: 10),
@@ -72,10 +68,7 @@ class HomePage extends StatelessWidget {
                 destinationCard("Udupi", "Malpe Beach", Colors.purple),
               ],
             ),
-
             SizedBox(height: 20),
-
-            /// PACKAGES
             sectionTitle("Popular Packages"),
             SizedBox(height: 10),
 
@@ -120,9 +113,6 @@ class HomePage extends StatelessWidget {
     return Expanded(
       child: Stack(
         children: [
-
-
-          /// BACKGROUND CARD
           Container(
             height: 150,
             margin: EdgeInsets.only(top: 10),
@@ -131,8 +121,6 @@ class HomePage extends StatelessWidget {
               borderRadius: BorderRadius.circular(15),
             ),
           ),
-
-          /// RATING BADGE
           Positioned(
             top: 20,
             left: 10,
@@ -150,8 +138,6 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-
-          /// TEXT AT BOTTOM
           Positioned(
             bottom: 10,
             left: 10,
